@@ -19,7 +19,7 @@ app.get('/users',(req,res)=>{
         message: 'successfully got users. Nice!',
         users: mockData
     });
-});
+})
 
 app.get('/users/:id',(req,res)=>{
     console.log(req.params.id);
@@ -28,7 +28,7 @@ app.get('/users/:id',(req,res)=>{
         message: 'successfully got a user.',
         users: req.params.id
     });
-});
+})
 
 //handle post requests
 app.post('/login',(req,res)=>{
